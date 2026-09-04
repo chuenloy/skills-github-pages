@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fdf2fb" />
+  <title>Date_w_me?</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app" aria-live="polite">
+
+    <!-- 1. OPENING SCREEN -->
+    <section class="screen active opening" data-step="initial">
+      <div class="wiggle-heart" aria-hidden="true">♥</div>
+
+      <h1 class="gradient-title">wanna go on a date? 💕</h1>
+
+      <img
+        class="main-cat floating"
+        src="./assets/cat-main.jpeg"
+        alt="Cute cat"
+      />
+
+      <div class="choice-row initial-choice-row">
+        <button class="pill yes-button" id="yesButton">YES!! 💖</button>
+        <button class="tiny-no" id="noButton">no</button>
+      </div>
+    </section>
+
+    <!-- NO SCREEN -->
+    <section class="screen rejected" data-step="rejected">
+      <img
+        class="sad-cat"
+        src="./assets/cat-sad.jpg"
+        alt="Crying cat giving a thumbs up"
+      />
+      <p class="sad-copy">ok 😞</p>
+    </section>
+
+    <!-- 2. WHERE SCREEN -->
+    <section class="screen where-screen" data-step="where">
+      <img
+        class="yay-cat"
+        src="./assets/cat-yay.jpg"
+        alt="Excited cat"
+      />
+
+      <h2 class="yay-title pulse">yay! 🎉</h2>
+
+      <p class="prompt pink-prompt">
+        <span aria-hidden="true">✧</span>
+        where do you wanna go?
+        <span aria-hidden="true">✧</span>
+      </p>
+
+      <select class="big-select pink-control" id="whereSelect" aria-label="Pick a date idea">
+        <option value="">pick one! ✨</option>
+      </select>
+
+      <button class="pill next-button pink-purple hidden" id="whereNext">
+        next! →
+      </button>
+    </section>
+
+    <!-- 3. WHEN SCREEN -->
+    <section class="screen when-screen" data-step="when">
+      <h2 class="gradient-heading">
+        <span aria-hidden="true">✧</span>
+        when works for you?
+        <span aria-hidden="true">✧</span>
+      </h2>
+
+      <div class="form-stack">
+        <label class="field-label" for="dateInput">📅 date:</label>
+        <input class="big-input purple-control" id="dateInput" type="date" />
+
+        <label class="field-label" for="timeSelect">🕐 time:</label>
+        <select class="big-select purple-control" id="timeSelect">
+          <option value="">pick a time! ⏰</option>
+        </select>
+      </div>
+
+      <button class="pill next-button blue-purple hidden" id="whenNext">
+        next! →
+      </button>
+    </section>
+
+    <!-- 4. RIDE SCREEN -->
+    <section class="screen ride-screen" data-step="ride">
+      <h2 class="gradient-heading ride-heading">
+        <span aria-hidden="true">✧</span>
+        do you need a ride? 🚗
+        <span aria-hidden="true">✧</span>
+      </h2>
+
+      <div class="ride-buttons">
+        <button class="pill ride-button ride-yes" id="rideYes">
+          yes please! 💚
+        </button>
+
+        <button class="pill ride-button ride-no" id="rideNo">
+          i'm good! 💙
+        </button>
+      </div>
+    </section>
+
+    <!-- 5. FINAL SCREEN -->
+    <section class="screen complete-screen" data-step="complete">
+      <div class="spinning-heart" aria-hidden="true">♥</div>
+
+      <h2 class="gradient-title final-title">it's a date! 💕</h2>
+
+      <div class="final-card">
+        <p class="cant-wait">can't wait!! ✨</p>
+        <p class="details-copy">i'll text you the details 📱</p>
+      </div>
+
+      <div class="bouncy-emoji" aria-hidden="true">💖</div>
+    </section>
+
+  </main>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
