@@ -4,11 +4,11 @@
 // -------------------------------------------------------
 
 const DATE_IDEAS = [
-  { value: "backrooms", label: "see Backrooms (do u like scary stuff?)" },
-  { value: "dintaifung", label: "dinner at Din Tai Fung (i luv cantonese)" },
-  { value: "iceskating", label: "ice skating (im pretty good)" },
-  { value: "arcade", label: "arcade date (let's get competitive 🎮)" },
-  { value: "museumdate", label: "art museum (i'll pretend to understand art)" }
+  { value: "backrooms", label: "andalusian food round 2 ??" },
+  { value: "dintaifung", label: "hiking in patagonia" },
+  { value: "iceskating", label: "facetime call" },
+  { value: "arcade", label: "facetime call (sexual)" },
+  { value: "museumdate", label: "breeding activities" }
 ];
 
 const TIME_OPTIONS = [
